@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
+import Button from '@mui/material/Button'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box
+      sx={{ flexGrow: 1 }}
+      component="section"
+    >
+      <Grid container spacing={2}>
+        <Grid xs={12} display="flex" justifyContent="center" flexDirection="column" alignItems="center"> 
+          <h1>Meu Local</h1>
+          <span className="subtitle">San Francisco</span>
+          <span className="temperature">12º</span>
+          <span className="conditions">Parcialmente Nublado</span>
+          <Grid xs={12} display="flex" flexDirection="row" spacing={2}>
+            <span className="max-temperature">Máx.: 17º</span>
+            <span className="min-temperature">Min.: 11º</span>
+          </Grid>
+        </Grid>
+        <Grid xs={12} display="flex" justifyContent="center" sx={{background: 'blue'}}>
+          
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 
