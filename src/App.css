@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.temperature{
+  font-size: 4em;
+  font-weight: 700;
+}
+.temp_symbol{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
